@@ -1,0 +1,50 @@
+.signup_link {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+.signup_link a {
+  color: var(--color4);
+  text-decoration: none;
+}
+.signup_link a:hover {
+  text-decoration: underline;
+}
+#loginB {
+  color: white !important;
+}
+
+#loginB:active {
+  box-shadow: var(--color4) !important;
+}
+
+.p-5 {
+  background-color: var(--color2) !important;
+}
+
+.group {
+  margin-bottom: 20px !important;
+}
+
+.a {
+  align-items: center !important;
+  justify-content: center;
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  background-color: var(--color2) !important;
+}
+
+#loginForm {
+  height: 350px;
+  width: 330px;
+  padding-top: 50px !important;
+  margin-bottom: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#titulo {
+  border-bottom: 1px solid silver !important;
+  color: white !important;
+}

@@ -1,0 +1,195 @@
+.dropdown {
+  margin-right: 10px;
+}
+
+a:hover > .icon-ingresar:before {
+  color: var(--color4);
+}
+a:focus > .icon-ingresar:before {
+  color: var(--color4);
+}
+
+a:hover > .icon-registrarse:before {
+  color: var(--color4);
+}
+a:focus > .icon-registrarse:before {
+  color: var(--color4);
+}
+
+a:hover > .icon-inicio:before {
+  color: var(--color4);
+}
+a:focus > .icon-inicio:before {
+  color: var(--color4);
+}
+
+a:hover > .icon-editar:before {
+  color: var(--color4);
+}
+a:focus > .icon-editar:before {
+  color: var(--color4);
+}
+a:hover > .icon-buscar:before {
+  color: var(--color4);
+}
+a:focus > .icon-buscar:before {
+  color: var(--color4);
+}
+
+a:hover > .icon-descubrir:before {
+  color: var(--color4);
+}
+a:focus > .icon-descubrir:before {
+  color: var(--color4);
+}
+
+a:hover > .icon-ajustes:before {
+  color: var(--color4);
+}
+a:hover > .icon-cuenta:before {
+  color: var(--color4);
+}
+a:focus > .icon-ajustes:before {
+  color: var(--color4);
+}
+
+a.dropdown-item.active {
+  background-color: #212529 !important;
+  border-radius: 3px;
+}
+a.dropdown-item:active {
+  background-color: #212529;
+}
+
+a.dropdown-item:hover {
+  background-color: #212529 !important;
+}
+
+button.dropdown-item:hover {
+  background-color: #212529 !important;
+}
+
+button:active {
+  background-color: white !important;
+}
+button {
+  color: #969b90 !important;
+}
+
+a#inicio.active {
+  text-decoration: none !important;
+}
+
+a {
+  color: white !important ;
+}
+a:hover {
+  color: var(--color4) !important;
+}
+a:focus {
+  color: var(--color4) !important;
+}
+
+.active {
+  color: var(--color4) !important;
+}
+
+.active > .icon-inicio:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-registrarse:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-ingresar:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-editar:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-buscar:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-descubrir:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-ajustes:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-registrarse:before {
+  color: var(--color4) !important;
+}
+
+.active > .icon-cuenta:before {
+  color: var(--color4) !important;
+}
+
+div.dropdown-menu.show {
+  background-color: #212529 !important;
+}
+
+#inicio {
+  text-decoration: none;
+}
+
+nav.navbar {
+  margin-bottom: 0 !important;
+}
+
+.quitar a#collasible-nav-dropdown.dropdown-toggle.nav-link::after {
+  display: none;
+}
+
+.awa {
+  margin-right: 25px;
+}
+
+.dropdown-item {
+  padding-left: 10px !important;
+}
+
+.noti div.dropdown-menu.show {
+  max-width: 450px !important;
+
+  min-width: 400px !important;
+  left: -180px !important;
+}
+
+.cuenta div.dropdown-menu.show {
+  min-width: 10px !important;
+
+  max-width: 115px;
+  left: -10px !important;
+}
+
+button#salir.dropdown-item {
+  color: white !important;
+}
+
+#hola {
+  color: white !important;
+
+  font-size: 15px;
+}
+
+.quitarNoti {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left:auto;
+  font-size: 10px;
+}
+
+.quitarNoti:active {
+  background-color: transparent !important;
+}
+i.icon-rechazar::before{
+
+  color:white
+}

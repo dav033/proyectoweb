@@ -1,0 +1,36 @@
+
+
+.animate__headShake {
+  color: var(--color4);
+
+  position: absolute !important;
+  font-size: 14px;
+  user-select: none;
+}
+#registerForm {
+  height: 350px;
+  width: 400px;
+  padding-top: 30px !important;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.alert {
+  color: var(--color4);
+
+  position: absolute !important;
+  font-size: 14px;
+  user-select: none;
+
+  padding: 0 !important;
+}
+
+#sub {
+  color: white !important;
+}
+
+div.a.container {
+ 
+}

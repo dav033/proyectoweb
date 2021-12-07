@@ -1,0 +1,61 @@
+problema central: Fallas en la comunicacion entre empresas prestadoras de servicios publicos y el estado .
+
+consecuencia_problemaCentral: diferencias entre la informacion del estado y las empresas prestadora de servicios publicos.
+
+consecuencia_problemaSecundario: Descoonteto de los ciudadanos respecto a los pagos.
+
+causa1: Ausencia de un sistema unificado de informacion.                                                                                                                                                                                                                                                                                                                          
+
+problema secundario: cobro inadecuado de los servicios
+
+
+problema secundario: 
+
+ {/* <div className="center">
+        <h1>Registro</h1>
+        <form onSubmit={(e) => onSubmit(e)}>
+          <div className="txt_field">
+            <input
+              type="text"
+              required
+              onChange={(e) => onChangeUserName(e)}
+            ></input>
+            <span></span>
+            <label>Username</label>
+            {alertaU(election)}
+          </div>
+
+          <div className="txt_field">
+            <input
+              type="text"
+              required
+              onChange={(e) => onChangeEmail(e)}
+            ></input>
+            <span></span>
+            <label>Correo</label>
+            {alertaC(election)}
+          </div>
+          <div className="txt_field">
+            <input
+              type="password"
+              required
+              onChange={(e) => onChangePassword(e)}
+            ></input>
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div className="txt_field">
+            <input
+              type="password"
+              required
+              onChange={(e) => onChangePassword2(e)}
+            ></input>
+            <span></span>
+            {alertaP()}
+            <label>Confirm Password</label>
+          </div>
+
+          <input type="submit" value="Registrarse" id="sub"></input>
+          <div className="signup_link"></div>
+        </form>
+      </div> */}

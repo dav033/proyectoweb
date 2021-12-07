@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e794b990.chunk.css",
+    "main.js": "/static/js/main.d928c02f.chunk.js",
+    "main.js.map": "/static/js/main.d928c02f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.86b20e93.js",
+    "runtime-main.js.map": "/static/js/runtime-main.86b20e93.js.map",
+    "static/css/2.58d3e1ea.chunk.css": "/static/css/2.58d3e1ea.chunk.css",
+    "static/js/2.43dcb2f2.chunk.js": "/static/js/2.43dcb2f2.chunk.js",
+    "static/js/2.43dcb2f2.chunk.js.map": "/static/js/2.43dcb2f2.chunk.js.map",
+    "static/js/3.be054516.chunk.js": "/static/js/3.be054516.chunk.js",
+    "static/js/3.be054516.chunk.js.map": "/static/js/3.be054516.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.58d3e1ea.chunk.css.map": "/static/css/2.58d3e1ea.chunk.css.map",
+    "static/css/main.e794b990.chunk.css.map": "/static/css/main.e794b990.chunk.css.map",
+    "static/js/2.43dcb2f2.chunk.js.LICENSE.txt": "/static/js/2.43dcb2f2.chunk.js.LICENSE.txt",
+    "static/media/anime2.2f371c37.png": "/static/media/anime2.2f371c37.png",
+    "static/media/style.css": "/static/media/aniproyect.c576789c.ttf",
+    "static/media/comics.5b301635.jpg": "/static/media/comics.5b301635.jpg",
+    "static/media/libros.8105c060.jpg": "/static/media/libros.8105c060.jpg",
+    "static/media/ln.62de12b8.jpeg": "/static/media/ln.62de12b8.jpeg",
+    "static/media/manga.c045f40a.jpeg": "/static/media/manga.c045f40a.jpeg",
+    "static/media/manga.f259da8f.jpg": "/static/media/manga.f259da8f.jpg",
+    "static/media/musica.9736f20a.jpg": "/static/media/musica.9736f20a.jpg",
+    "static/media/oo.7f58d27b.jpg": "/static/media/oo.7f58d27b.jpg",
+    "static/media/peliculas.7af97d3f.jpg": "/static/media/peliculas.7af97d3f.jpg",
+    "static/media/series.0ff9e0fd.jpg": "/static/media/series.0ff9e0fd.jpg",
+    "static/media/videojuegos.c0fe4264.jpg": "/static/media/videojuegos.c0fe4264.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86b20e93.js",
+    "static/css/2.58d3e1ea.chunk.css",
+    "static/js/2.43dcb2f2.chunk.js",
+    "static/css/main.e794b990.chunk.css",
+    "static/js/main.d928c02f.chunk.js"
+  ]
+}
