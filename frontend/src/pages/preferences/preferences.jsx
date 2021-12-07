@@ -17,6 +17,8 @@ import "./preferences.css";
 import peliculas from "../../assets/images/peliculas.jpg";
 import { useEffect, useState } from "react";
 
+import CardC from "../../components/card/card";
+
 import {
   Navbar,
   Nav,
@@ -54,229 +56,114 @@ function Preferences() {
   const { user, setUser } = useAuth();
 
   const agregar = (e, id) => {
-    console.log("funcionando");
-    if (id === "Anime") {
-      setAnimeElection(true);
-    }
+    switch (id) {
+      case "Anime":
+        setAnimeElection(true);
+        break;
+      case "Manga":
+        setMangaElection(true);
+        break;
+      case "Series":
+        setSeriesElection(true);
+        break;
+      case "VideoJuegos":
+        setVideoElection(true);
+        break;
+      case "Novelas Ligeras":
+        setLightElection(true);
 
-    if (id === "Manga") {
-      setMangaElection(true);
-    }
+        break;
+      case "Libros":
+        setLibrosELection(true);
+        break;
+      case "Comics":
+        setComicElection(true);
+        break;
+      case "Peliculas":
+        setPeliELection(true);
+        break;
+      case "Musica":
+        setMusicaElection(true);
+        break;
 
-    if (id === "Series") {
-      setSeriesElection(true);
-    }
-
-    if (id === "VideoJuegos") {
-      setVideoElection(true);
-    }
-
-    if (id === "Libros") {
-      setLibrosELection(true);
-    }
-    if (id === "Novelas Ligeras") {
-      setLightElection(true);
-    }
-
-    if (id === "Comics") {
-      setComicElection(true);
-    }
-
-    if (id === "Peliculas") {
-      setPeliELection(true);
-    }
-
-    if (id === "Musica") {
-      setMusicaElection(true);
+      default:
+        break;
     }
   };
 
   const eliminar = (e, id) => {
-    console.log("funcionando");
-    if (id === "Anime") {
-      setAnimeElection(false);
-    }
-
-    if (id === "Manga") {
-      setMangaElection(false);
-    }
-
-    if (id === "Series") {
-      setSeriesElection(false);
-    }
-
-    if (id === "VideoJuegos") {
-      setVideoElection(false);
-    }
-
-    if (id === "Libros") {
-      setLibrosELection(false);
-    }
-
-    if (id === "Novelas Ligeras") {
-      setLightElection(false);
-    }
-
-    if (id === "Comics") {
-      setComicElection(false);
-    }
-
-    if (id === "Peliculas") {
-      setPeliELection(false);
-    }
-
-    if (id === "Musica") {
-      setMusicaElection(false);
+    switch (id) {
+      case "Anime":
+        setAnimeElection(false);
+        break;
+      case "Manga":
+        setMangaElection(false);
+        break;
+      case "Series":
+        setSeriesElection(false);
+        break;
+      case "VideoJuegos":
+        setVideoElection(false);
+        break;
+      case "Novelas Ligeras":
+        setLightElection(false);
+        break;
+      case "Libros":
+        setLibrosELection(false);
+        break;
+      case "Comics":
+        setComicElection(false);
+        break;
+      case "Peliculas":
+        setPeliELection(false);
+        break;
+      case "Musica":
+        setMusicaElection(false);
+        break;
+      default:
+        break;
     }
   };
 
+  function eleccion(elec, value) {
+    if (elec) {
+      return (
+        <button id="eliminar" onClick={(e) => eliminar(e, value)}>
+          Eliminar
+        </button>
+      );
+    } else {
+      return (
+        <button id="agregar" onClick={(e) => agregar(e, value)}>
+          Agregar
+        </button>
+      );
+    }
+  }
+
   function agregarBoton(id) {
-    //return (<button onClick={(e) => agregar(e, id)}>Agregar</button>)
+    switch (id) {
+      case "Anime":
+        return eleccion(animeELection, id);
+      case "Manga":
+        return eleccion(MangaElection, id);
+      case "Series":
+        return eleccion(seriesElection, id);
+      case "VideoJuegos":
+        return eleccion(videoElection, id);
+      case "Libros":
+        return eleccion(librosElection, id);
 
-    if (id === "Anime") {
-      if (animeELection === false) {
-        return (
-          <button id="agregar" onClick={(e) => agregar(e, id)}>
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <>
-            <button onClick={(e) => eliminar(e, id)} id="eliminar">
-              Eliminar
-            </button>
-          </>
-        );
-      }
-    }
-
-    if (id === "Manga") {
-      if (MangaElection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "Series") {
-      if (seriesElection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "VideoJuegos") {
-      if (videoElection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "Novelas Ligeras") {
-      if (lightElection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "Libros") {
-      if (librosElection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "Comics") {
-      if (comicELection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "Peliculas") {
-      if (peliELection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
-    }
-
-    if (id === "Musica") {
-      if (musicaElection === false) {
-        return (
-          <button onClick={(e) => agregar(e, id)} id="agregar">
-            Agregar
-          </button>
-        );
-      } else {
-        return (
-          <button onClick={(e) => eliminar(e, id)} id="eliminar">
-            Eliminar
-          </button>
-        );
-      }
+      case "Novelas Ligeras":
+        return eleccion(lightElection, id);
+      case "Comics":
+        return eleccion(comicELection, id);
+      case "Peliculas":
+        return eleccion(peliELection, id);
+      case "Musica":
+        return eleccion(musicaElection, id);
+      default:
+        return null;
     }
   }
   const car1 = [
@@ -410,6 +297,23 @@ function Preferences() {
     }
   }, [index]);
 
+  function carouselItem(car) {
+    return (
+      <Carousel.Item>
+        <CardGroup>
+          {car.map((item) => (
+            <CardC
+              imagen={item.imagen}
+              title={item.titulo}
+              boton={agregarBoton(item.titulo)}
+            >
+              Esta categoria cuenta con &nbsp; <b>0</b> &nbsp; miembros
+            </CardC>
+          ))}
+        </CardGroup>
+      </Carousel.Item>
+    );
+  }
   function ControlledCarousel() {
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
@@ -423,76 +327,9 @@ function Preferences() {
           interval={null}
           style={{ marginTop: "120px" }}
         >
-          <Carousel.Item>
-            <CardGroup>
-              {car1.map((item) => (
-                <Card bg={"dark"}>
-                  <Card.Img variant="top" src={item.imagen} />
-                  <Card.Body>
-                    <Card.Title
-                      className="text-center"
-                      style={{ color: "white" }}
-                    >
-                      {item.titulo}
-                    </Card.Title>
-                    <br></br>
-                    <Card.Text className="bodyCard text-center">
-                      Esta categoria cuenta con &nbsp; <b>0</b> &nbsp; miembros
-                    </Card.Text>
-                    <br></br>
-                    {agregarBoton(item.titulo)}
-                  </Card.Body>
-                </Card>
-              ))}
-            </CardGroup>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <CardGroup>
-              {car2.map((item) => (
-                <Card bg={"dark"}>
-                  <Card.Img variant="top" src={item.imagen} />
-                  <Card.Body>
-                    <Card.Title
-                      className="text-center"
-                      style={{ color: "white" }}
-                    >
-                      {item.titulo}
-                    </Card.Title>
-                    <br></br>
-                    <Card.Text className="bodyCard text-center">
-                      Esta categoria cuenta con &nbsp; <b>0</b> &nbsp; miembros
-                    </Card.Text>
-                    <br></br>
-                    {agregarBoton(item.titulo)}
-                  </Card.Body>
-                </Card>
-              ))}
-            </CardGroup>
-          </Carousel.Item>
-          <Carousel.Item>
-            <CardGroup>
-              {car3.map((item) => (
-                <Card bg={"dark"}>
-                  <Card.Img variant="top" src={item.imagen} />
-                  <Card.Body>
-                    <Card.Title
-                      className="text-center"
-                      style={{ color: "white" }}
-                    >
-                      {item.titulo}
-                    </Card.Title>
-                    <br></br>
-                    <Card.Text className="bodyCard text-center">
-                      Esta categoria cuenta con &nbsp; <b>0</b> &nbsp; miembros
-                    </Card.Text>
-                    <br></br>
-                    {agregarBoton(item.titulo)}
-                  </Card.Body>
-                </Card>
-              ))}
-            </CardGroup>
-          </Carousel.Item>
+          {carouselItem(car1)}
+          {carouselItem(car2)}
+          {carouselItem(car3)}
         </Carousel>
         {finButton()}
       </div>
