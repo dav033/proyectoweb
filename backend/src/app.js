@@ -1,7 +1,5 @@
-
-const http =require ("http")
-const {Server} = require("socket.io")
-
+const http = require("http");
+const { Server } = require("socket.io");
 
 const path = require("path");
 
@@ -9,14 +7,13 @@ const express = require("express");
 const fileUpload = require("express-fileupload");
 const cors = require("cors");
 const app = express();
-const httpServer = http.createServer(app)
-const io = new Server(httpServer)
+const httpServer = http.createServer(app);
+const io = new Server(httpServer);
 
 // settings
-io.on("connection" , () =>{
-
-  console.log("nueva coneccion")
-})
+io.on("connection", () => {
+  console.log("nueva coneccion");
+});
 app.set("port", process.env.PORT || 4000);
 
 // midlewares

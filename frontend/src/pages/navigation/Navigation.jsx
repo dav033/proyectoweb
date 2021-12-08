@@ -2,37 +2,16 @@ import React, { useContext, useEffect } from "react";
 
 import staticContext from "../../context/staticContext";
 import axios from "axios";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-  NavLink,
-  NavLinkProps,
-} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import routes from "../../helpers/routes";
 import useAuth from "../../auth/useAuth";
-import {
-  Navbar,
-  Nav,
-  Container,
-  NavDropdown,
-  Toast,
-  Row,
-  Col,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Toast } from "react-bootstrap";
 import "./Navigation.css";
 import { useState } from "react";
 import socket from "../Socket";
-import { io } from "socket.io-client";
-import ReactDOM from "react-dom";
 
 var actual = [];
 function Navigation(props) {
-  const { eleccion, setEleccion } = useContext(staticContext);
-
   const { fromRegister } = useAuth();
   const { identificador } = useAuth();
   const { lista } = useAuth();
@@ -201,7 +180,9 @@ function Navigation(props) {
   }, [isLogged, identificador, lista, fromRegister]);
 
   useEffect(() => {
-    console.log(notificaciones);
+    if (isLogged()) {
+      getNotificaciones();
+    }
   }, [notificaciones]);
 
   function removeItemFromArr(arr, item) {
@@ -226,9 +207,9 @@ function Navigation(props) {
 
   useEffect(() => {
     if (isLogged()) {
-       getNotificaciones();
+      getNotificaciones();
     }
-    console.log("#A")
+    console.log("#A");
   }, [user]);
 
   function notificacionesActivas() {

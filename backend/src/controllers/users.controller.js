@@ -42,7 +42,7 @@ usersCtrl.createUser = async (req, res) => {
 usersCtrl.getUser = async (req, res) => {
   const user = await User.findById(req.params.id);
   res.json({ user });
-  console.log(user);
+  console.log("getuser");
 };
 
 usersCtrl.updateUser = async (req, res) => {
